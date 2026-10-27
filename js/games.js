@@ -32,7 +32,7 @@ window.GAMES = [
     image: 'images/escape-room.svg',
     url: 'games/escape-room/index.html',
     accent: '#1F7A62',
-    status: 'soon'
+    status: 'ready'
   },
   {
     id: 'art-detective',
