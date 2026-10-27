@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="이젤 위의 캔버스와 물감 팔레트">
+  <rect width="400" height="500" fill="#2D3FA0"/>
+  <circle cx="64" cy="84" r="34" fill="#4A5CC0"/>
+  <rect y="446" width="400" height="54" fill="#202E7C"/>
+  <!-- easel legs -->
+  <line x1="200" y1="60" x2="200" y2="446" stroke="#2A211C" stroke-width="10" stroke-linecap="round"/>
+  <line x1="200" y1="150" x2="108" y2="446" stroke="#2A211C" stroke-width="10" stroke-linecap="round"/>
+  <line x1="200" y1="150" x2="292" y2="446" stroke="#2A211C" stroke-width="10" stroke-linecap="round"/>
+  <!-- canvas -->
+  <rect x="86" y="108" width="228" height="190" fill="#F7F5EE" stroke="#2A211C" stroke-width="8"/>
+  <rect x="98" y="120" width="204" height="166" fill="#F2C14E"/>
+  <circle cx="250" cy="160" r="22" fill="#FBF6E6"/>
+  <path d="M98 286 L152 192 L196 256 L232 214 L302 286 Z" fill="#D9432B"/>
+  <path d="M98 286 L140 236 L176 286 Z" fill="#1F7A62"/>
+  <path d="M98 262 Q150 244 200 268 T302 258 V286 H98 Z" fill="#B8456B" opacity=".85"/>
+  <rect x="190" y="298" width="20" height="10" fill="#2A211C"/>
+  <!-- palette -->
+  <g transform="rotate(-14 130 398)">
+    <path d="M52 392 C52 340 146 322 206 346 C256 366 238 424 190 430 C158 434 164 462 124 462 C78 462 52 430 52 392 Z" fill="#E9D8B4" stroke="#2A211C" stroke-width="6"/>
+    <circle cx="150" cy="418" r="11" fill="#2A211C" opacity=".75"/>
+    <circle cx="92" cy="380" r="13" fill="#D9432B"/>
+    <circle cx="128" cy="362" r="13" fill="#F2C14E"/>
+    <circle cx="170" cy="360" r="13" fill="#1F7A62"/>
+    <circle cx="208" cy="380" r="13" fill="#2D3FA0"/>
+    <circle cx="84" cy="418" r="13" fill="#B8456B"/>
+  </g>
+  <!-- brush -->
+  <g transform="rotate(24 318 380)">
+    <rect x="314" y="316" width="12" height="104" rx="5" fill="#C9A24A"/>
+    <rect x="312" y="410" width="16" height="22" fill="#B7B7B7"/>
+    <path d="M312 432 H328 L320 462 Z" fill="#D9432B"/>
+  </g>
+</svg>

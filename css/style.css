@@ -1,0 +1,314 @@
+/* ==========================================================
+   아트 어드벤처 : 온라인 미술관 스타일
+   색: 회벽(wall) 바탕 + 물감 색 포인트
+   ========================================================== */
+
+:root {
+  --wall: #E7EAE6;
+  --wall-deep: #D9DDD8;
+  --ink: #1B1F2A;
+  --ink-soft: #4A5060;
+  --paper: #FBFAF6;
+  --gold: #C9A24A;
+  --ultramarine: #2D3FA0;
+  --accent: #2D3FA0;
+
+  --font-display: 'Gowun Batang', 'Nanum Myeongjo', 'Noto Serif KR', serif;
+  --font-body: 'IBM Plex Sans KR', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+
+  --max: 1180px;
+  --gutter: clamp(20px, 5vw, 48px);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--wall);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
+}
+
+img { max-width: 100%; }
+
+a { color: inherit; }
+
+a:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid var(--ultramarine);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  background: var(--ink);
+  color: #fff;
+  padding: 10px 16px;
+  z-index: 10;
+  text-decoration: none;
+}
+.skip-link:focus { top: 12px; }
+
+/* ---------- 상단 바 ---------- */
+.site-header {
+  border-bottom: 1px solid rgba(27, 31, 42, 0.16);
+}
+.site-header-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 18px var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 20px;
+}
+.brand img { width: 30px; height: 30px; display: block; }
+.site-nav a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 6px 2px;
+  border-bottom: 2px solid transparent;
+}
+.site-nav a:hover { border-bottom-color: var(--ink); }
+
+/* ---------- 입구 (히어로) ---------- */
+.hero {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: clamp(48px, 9vw, 104px) var(--gutter) clamp(40px, 7vw, 80px);
+  text-align: center;
+}
+.hero-plate {
+  display: inline-block;
+  max-width: 100%;
+  padding: clamp(28px, 5vw, 56px) clamp(28px, 7vw, 96px);
+  background: var(--paper);
+  border: 1px solid rgba(27, 31, 42, 0.22);
+  outline: 1px solid var(--gold);
+  outline-offset: -10px;
+  box-shadow: 0 24px 40px -28px rgba(27, 31, 42, 0.5);
+  animation: plate-in 0.9s ease-out both;
+}
+.hero h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(44px, 9vw, 92px);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+.hero-lead {
+  margin: 20px auto 0;
+  max-width: 30em;
+  font-size: clamp(16px, 2.2vw, 19px);
+  color: var(--ink-soft);
+}
+.hero-cta {
+  margin-top: 36px;
+}
+
+@keyframes plate-in {
+  from { opacity: 0; transform: translateY(-14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- 전시실 ---------- */
+.rooms {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 24px var(--gutter) clamp(64px, 9vw, 112px);
+}
+.rooms-head {
+  text-align: center;
+  margin-bottom: clamp(36px, 6vw, 64px);
+}
+.rooms-head h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.3;
+}
+.rooms-head p {
+  margin: 8px 0 0;
+  color: var(--ink-soft);
+}
+
+/* 개수가 늘어도 마지막 줄이 가운데 정렬돼요 */
+.gallery {
+  --gap: clamp(32px, 5vw, 56px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(40px, 6vw, 72px) var(--gap);
+}
+
+.exhibit {
+  flex: 0 0 calc((100% - 2 * var(--gap)) / 3);
+  min-width: 0;
+}
+
+/* 갤러리 벽처럼 가운데 열을 살짝 아래로 걸어요 */
+.exhibit:nth-child(3n + 2) { margin-top: 44px; }
+
+/* 액자 */
+.frame {
+  display: block;
+  padding: 12px;
+  background: linear-gradient(160deg, #3C2E26, #221913);
+  outline: 1px solid var(--gold);
+  outline-offset: -6px;
+  box-shadow:
+    0 22px 32px -20px rgba(27, 31, 42, 0.65),
+    0 2px 0 rgba(255, 255, 255, 0.22) inset;
+}
+.mat {
+  background: #F7F5EE;
+  padding: clamp(10px, 1.6vw, 16px);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.14);
+}
+.mat img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+/* 작품 설명 카드 */
+.placard {
+  width: 90%;
+  margin: 22px auto 0;
+  padding: 18px 20px 20px;
+  background: var(--paper);
+  border: 1px solid rgba(27, 31, 42, 0.14);
+  border-top: 4px solid var(--accent);
+  box-shadow: 0 10px 18px -14px rgba(27, 31, 42, 0.45);
+}
+.placard-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 1.35;
+}
+.placard-text {
+  margin: 8px 0 0;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--ink-soft);
+}
+.placard-foot {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* 버튼 */
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background: var(--ink);
+  color: #fff;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background-color 0.2s;
+}
+.btn:hover { background: var(--ultramarine); }
+.btn-large { padding: 14px 32px; font-size: 16px; }
+
+.badge {
+  font-size: 13px;
+  color: var(--ink-soft);
+  padding: 2px 10px;
+  border: 1px solid rgba(27, 31, 42, 0.3);
+  border-radius: 999px;
+}
+
+.empty {
+  text-align: center;
+  color: var(--ink-soft);
+}
+
+/* ---------- 하단 ---------- */
+.site-footer {
+  border-top: 1px solid rgba(27, 31, 42, 0.16);
+  background: var(--wall-deep);
+}
+.site-footer-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 28px var(--gutter);
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+.site-footer p { margin: 0; }
+
+/* ---------- 게임 준비 중 페이지 ---------- */
+.game-stage {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(40px, 8vw, 88px) var(--gutter) clamp(56px, 9vw, 104px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.game-stage .frame { width: 240px; flex: 0 0 auto; }
+.game-info { flex: 1 1 280px; }
+.game-info h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(30px, 5vw, 42px);
+  line-height: 1.25;
+}
+.game-info .summary { margin: 12px 0 0; color: var(--ink-soft); }
+.notice {
+  margin: 24px 0;
+  padding: 14px 18px;
+  background: var(--paper);
+  border-left: 4px solid var(--accent);
+  font-size: 15px;
+}
+
+/* ---------- 화면 크기별 ---------- */
+@media (max-width: 980px) {
+  .exhibit { flex-basis: calc((100% - var(--gap)) / 2); }
+  .exhibit:nth-child(3n + 2) { margin-top: 0; }
+  .exhibit:nth-child(even) { margin-top: 44px; }
+}
+
+@media (max-width: 640px) {
+  .exhibit { flex-basis: 100%; max-width: 420px; }
+  .exhibit:nth-child(even) { margin-top: 0; }
+  .brand { font-size: 18px; }
+}
+
+/* 움직임을 줄이고 싶은 사용자 설정을 존중해요 */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero-plate { animation: none; }
+  .btn { transition: none; }
+}

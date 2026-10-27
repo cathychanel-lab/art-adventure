@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>아트 어드벤처 | 미술사 온라인 미술관</title>
+  <meta name="description" content="게임으로 배우는 중학생 미술사. 부루마불, 방탈출, 탐정 게임, 퀴즈로 명화와 화가를 만나 보세요.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#gallery">전시실로 바로 가기</a>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.svg" alt="">
+        <span data-site-name>아트 어드벤처</span>
+      </a>
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <a href="#gallery">전시실</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="site-title">
+      <div class="hero-plate">
+        <h1 id="site-title" data-site-name>아트 어드벤처</h1>
+        <p class="hero-lead">명화 속으로 들어가 미술사를 게임처럼 배우는 온라인 미술관이에요.</p>
+        <div class="hero-cta">
+          <a class="btn btn-large" href="#gallery">전시실 둘러보기</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="rooms" id="gallery" aria-labelledby="rooms-title">
+      <div class="rooms-head">
+        <h2 id="rooms-title">전시실</h2>
+        <p>하고 싶은 게임을 골라 시작해 보세요.</p>
+      </div>
+      <div class="gallery" id="gallery-list">
+        <noscript><p class="empty">게임 목록을 보려면 브라우저에서 JavaScript를 켜 주세요.</p></noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p>&copy; 2026 <span data-site-name>아트 어드벤처</span>. 중학생을 위한 미술사 교육 놀이터.</p>
+    </div>
+  </footer>
+
+  <script src="js/games.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

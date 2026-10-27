@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="빛이 새어 나오는 낡은 문과 황금 열쇠">
+  <defs>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE9A0" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#FFE9A0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="#1F7A62"/>
+  <rect y="0" width="400" height="250" fill="#18634F"/>
+  <rect y="430" width="400" height="70" fill="#0F4A3B"/>
+  <!-- light spilling from the door -->
+  <polygon points="200,430 90,500 310,500" fill="url(#glow)" opacity=".6"/>
+  <!-- door frame -->
+  <path d="M96 436 V232 A104 104 0 0 1 304 232 V436 Z" fill="#1B1F2A"/>
+  <path d="M112 436 V232 A88 88 0 0 1 288 232 V436 Z" fill="#3A2C24"/>
+  <path d="M200 144 V436" stroke="#FFE9A0" stroke-width="5"/>
+  <path d="M200 144 V436" stroke="#FFE9A0" stroke-width="16" opacity=".25"/>
+  <!-- panels -->
+  <rect x="128" y="250" width="56" height="70" rx="4" fill="none" stroke="#5A4638" stroke-width="4"/>
+  <rect x="216" y="250" width="56" height="70" rx="4" fill="none" stroke="#5A4638" stroke-width="4"/>
+  <rect x="128" y="340" width="56" height="70" rx="4" fill="none" stroke="#5A4638" stroke-width="4"/>
+  <rect x="216" y="340" width="56" height="70" rx="4" fill="none" stroke="#5A4638" stroke-width="4"/>
+  <!-- lock plate -->
+  <rect x="172" y="300" width="22" height="46" rx="6" fill="#C9A24A"/>
+  <circle cx="183" cy="318" r="5" fill="#1B1F2A"/>
+  <polygon points="180,320 186,320 188,334 178,334" fill="#1B1F2A"/>
+  <!-- floating key -->
+  <g transform="rotate(-28 268 168)">
+    <circle cx="268" cy="168" r="30" fill="none" stroke="#F0C14B" stroke-width="12"/>
+    <circle cx="268" cy="168" r="8" fill="#F0C14B"/>
+    <rect x="296" y="161" width="104" height="14" rx="5" fill="#F0C14B"/>
+    <rect x="356" y="175" width="12" height="26" fill="#F0C14B"/>
+    <rect x="376" y="175" width="12" height="18" fill="#F0C14B"/>
+  </g>
+  <!-- sparkles -->
+  <path d="M60 110 l6 16 16 6 -16 6 -6 16 -6 -16 -16 -6 16 -6z" fill="#FFE9A0"/>
+  <path d="M338 330 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z" fill="#FFE9A0"/>
+</svg>

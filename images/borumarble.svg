@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="타일이 둘러싼 보드게임 판과 주사위">
+  <rect width="400" height="500" fill="#E8B23A"/>
+  <circle cx="330" cy="70" r="46" fill="#F6D88A"/>
+  <rect x="0" y="430" width="400" height="70" fill="#C98F1C"/>
+  <!-- board -->
+  <rect x="56" y="116" width="288" height="288" fill="#FBF6E6" stroke="#1B1F2A" stroke-width="6"/>
+  <rect x="112" y="172" width="176" height="176" fill="#2D3FA0" stroke="#1B1F2A" stroke-width="4"/>
+  <!-- top row -->
+  <rect x="59" y="119" width="56" height="53" fill="#D9432B"/>
+  <rect x="115" y="119" width="58" height="53" fill="#FBF6E6" stroke="#1B1F2A" stroke-width="2"/>
+  <rect x="173" y="119" width="54" height="53" fill="#1F7A62"/>
+  <rect x="227" y="119" width="58" height="53" fill="#FBF6E6" stroke="#1B1F2A" stroke-width="2"/>
+  <rect x="285" y="119" width="56" height="53" fill="#B8456B"/>
+  <!-- bottom row -->
+  <rect x="59" y="348" width="56" height="53" fill="#B8456B"/>
+  <rect x="115" y="348" width="58" height="53" fill="#FBF6E6" stroke="#1B1F2A" stroke-width="2"/>
+  <rect x="173" y="348" width="54" height="53" fill="#2D3FA0"/>
+  <rect x="227" y="348" width="58" height="53" fill="#FBF6E6" stroke="#1B1F2A" stroke-width="2"/>
+  <rect x="285" y="348" width="56" height="53" fill="#D9432B"/>
+  <!-- left column -->
+  <rect x="59" y="172" width="53" height="58" fill="#FBF6E6" stroke="#1B1F2A" stroke-width="2"/>
+  <rect x="59" y="230" width="53" height="58" fill="#2D3FA0"/>
+  <rect x="59" y="288" width="53" height="60" fill="#FBF6E6" stroke="#1B1F2A" stroke-width="2"/>
+  <!-- right column -->
+  <rect x="288" y="172" width="53" height="58" fill="#1F7A62"/>
+  <rect x="288" y="230" width="53" height="58" fill="#FBF6E6" stroke="#1B1F2A" stroke-width="2"/>
+  <rect x="288" y="288" width="53" height="60" fill="#D9432B"/>
+  <!-- center abstract art -->
+  <circle cx="200" cy="236" r="30" fill="#E8B23A"/>
+  <polygon points="150,328 200,262 250,328" fill="#D9432B"/>
+  <rect x="226" y="300" width="42" height="28" fill="#1F7A62"/>
+  <!-- pawn -->
+  <g transform="translate(86 92)">
+    <ellipse cx="0" cy="34" rx="20" ry="7" fill="#1B1F2A" opacity=".25"/>
+    <path d="M-16 32 Q-16 14 -6 8 L6 8 Q16 14 16 32 Z" fill="#1B1F2A"/>
+    <circle cx="0" cy="-4" r="12" fill="#1B1F2A"/>
+  </g>
+  <!-- dice -->
+  <g transform="rotate(-12 296 424)">
+    <rect x="258" y="386" width="76" height="76" rx="12" fill="#FBF6E6" stroke="#1B1F2A" stroke-width="5"/>
+    <circle cx="279" cy="407" r="6" fill="#1B1F2A"/>
+    <circle cx="313" cy="407" r="6" fill="#1B1F2A"/>
+    <circle cx="296" cy="424" r="6" fill="#D9432B"/>
+    <circle cx="279" cy="441" r="6" fill="#1B1F2A"/>
+    <circle cx="313" cy="441" r="6" fill="#1B1F2A"/>
+  </g>
+</svg>

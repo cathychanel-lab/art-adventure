@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="액자 속 그림을 돋보기로 살펴보는 장면">
+  <rect width="400" height="500" fill="#D9432B"/>
+  <rect y="440" width="400" height="60" fill="#A82F1C"/>
+  <!-- frame -->
+  <rect x="62" y="96" width="244" height="304" fill="#2A211C"/>
+  <rect x="74" y="108" width="220" height="280" fill="#C9A24A"/>
+  <rect x="82" y="116" width="204" height="264" fill="#F4EFE3"/>
+  <!-- scene inside the frame -->
+  <rect x="82" y="116" width="204" height="120" fill="#BFD3E6"/>
+  <circle cx="226" cy="168" r="26" fill="#F2C14E"/>
+  <path d="M82 260 L150 190 L206 250 L246 216 L286 252 V380 H82 Z" fill="#3E5C8A"/>
+  <path d="M82 310 Q150 280 210 316 T286 304 V380 H82 Z" fill="#1F7A62"/>
+  <rect x="120" y="326" width="22" height="30" fill="#7A4B2C"/>
+  <polygon points="108,326 131,292 154,326" fill="#14594A"/>
+  <!-- the odd clue -->
+  <rect x="236" y="338" width="14" height="14" fill="#B8456B" transform="rotate(20 243 345)"/>
+  <!-- magnifier -->
+  <circle cx="262" cy="338" r="62" fill="#FFFFFF" fill-opacity=".28" stroke="#1B1F2A" stroke-width="12"/>
+  <circle cx="262" cy="338" r="50" fill="none" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="3" stroke-dasharray="30 200" stroke-linecap="round" transform="rotate(200 262 338)"/>
+  <rect x="236" y="318" width="40" height="40" fill="#B8456B" transform="rotate(20 256 338)"/>
+  <line x1="308" y1="384" x2="352" y2="440" stroke="#1B1F2A" stroke-width="20" stroke-linecap="round"/>
+  <line x1="308" y1="384" x2="326" y2="408" stroke="#C9A24A" stroke-width="20" stroke-linecap="round"/>
+  <!-- question marks -->
+  <text x="324" y="150" font-family="Georgia, serif" font-size="64" font-weight="700" fill="#F6C9BE">?</text>
+  <text x="26" y="64" font-family="Georgia, serif" font-size="40" font-weight="700" fill="#F6C9BE" opacity=".7">?</text>
+</svg>

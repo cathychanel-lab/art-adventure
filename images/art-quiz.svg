@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="붓 자국으로 그린 커다란 물음표와 퀴즈 카드">
+  <rect width="400" height="500" fill="#B8456B"/>
+  <rect y="440" width="400" height="60" fill="#8F3350"/>
+  <!-- quiz cards behind -->
+  <g transform="rotate(-10 130 330)">
+    <rect x="60" y="250" width="130" height="170" rx="10" fill="#FBF6E6" stroke="#1B1F2A" stroke-width="5"/>
+    <rect x="76" y="270" width="98" height="12" fill="#2D3FA0"/>
+    <rect x="76" y="296" width="70" height="10" fill="#D8D3C4"/>
+    <circle cx="90" cy="342" r="9" fill="none" stroke="#1B1F2A" stroke-width="3"/>
+    <circle cx="90" cy="372" r="9" fill="#1F7A62" stroke="#1B1F2A" stroke-width="3"/>
+    <rect x="108" y="338" width="56" height="8" fill="#D8D3C4"/>
+    <rect x="108" y="368" width="56" height="8" fill="#D8D3C4"/>
+  </g>
+  <g transform="rotate(12 290 340)">
+    <rect x="224" y="260" width="130" height="170" rx="10" fill="#F2C14E" stroke="#1B1F2A" stroke-width="5"/>
+    <text x="289" y="372" text-anchor="middle" font-family="Georgia, serif" font-size="90" font-weight="700" fill="#1B1F2A">A</text>
+  </g>
+  <!-- paint-stroke question mark -->
+  <path d="M138 176 C132 108 262 96 262 170 C262 226 200 232 200 290" fill="none" stroke="#1B1F2A" stroke-width="44" stroke-linecap="round" opacity=".25" transform="translate(8 8)"/>
+  <path d="M138 176 C132 108 262 96 262 170 C262 226 200 232 200 290" fill="none" stroke="#FBF6E6" stroke-width="40" stroke-linecap="round"/>
+  <circle cx="200" cy="352" r="24" fill="#FBF6E6"/>
+  <!-- splashes -->
+  <circle cx="64" cy="96" r="14" fill="#F2C14E"/>
+  <circle cx="92" cy="130" r="7" fill="#F2C14E"/>
+  <circle cx="338" cy="84" r="18" fill="#2D3FA0"/>
+  <circle cx="312" cy="124" r="8" fill="#2D3FA0"/>
+  <circle cx="346" cy="196" r="10" fill="#1F7A62"/>
+</svg>
